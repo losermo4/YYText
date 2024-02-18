@@ -116,7 +116,7 @@ static dispatch_queue_t YYTextAsyncLayerGetReleaseQueue() {
         __weak typeof(self) _self = self;
         if (@available(iOS 13.0, *)) {
             [view.traitCollection performAsCurrentTraitCollection:^{
-                [_self _displayAsync:_displaysAsynchronously];
+                [_self _displayAsync:_self.displaysAsynchronously];
             }];
         } else {
             [self _displayAsync:_displaysAsynchronously];

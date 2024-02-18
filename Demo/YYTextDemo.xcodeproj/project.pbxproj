@@ -79,6 +79,7 @@
 		D94EE9981F37304200F37AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D94EE9971F37304200F37AD6 /* Assets.xcassets */; };
 		D94EE99B1F37304200F37AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D94EE9991F37304200F37AD6 /* LaunchScreen.storyboard */; };
 		D94EE99E1F37304200F37AD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D94EE99D1F37304200F37AD6 /* main.m */; };
+		F244B82A2B81F32A00298041 /* YYTextDarkModeExample.m in Sources */ = {isa = PBXBuildFile; fileRef = F244B8282B81F32A00298041 /* YYTextDarkModeExample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,6 +213,8 @@
 		D94EE99A1F37304200F37AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D94EE99C1F37304200F37AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D94EE99D1F37304200F37AD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F244B8282B81F32A00298041 /* YYTextDarkModeExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextDarkModeExample.m; sourceTree = "<group>"; };
+		F244B8292B81F32A00298041 /* YYTextDarkModeExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextDarkModeExample.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -445,6 +448,8 @@
 				D91055161F37367B0007F224 /* YYTextRubyExample.m */,
 				D91055011F37367B0007F224 /* YYTextAsyncExample.h */,
 				D91055021F37367B0007F224 /* YYTextAsyncExample.m */,
+				F244B8292B81F32A00298041 /* YYTextDarkModeExample.h */,
+				F244B8282B81F32A00298041 /* YYTextDarkModeExample.m */,
 				D91055301F3736910007F224 /* Resources */,
 				D91054DF1F3736130007F224 /* Supporting Files */,
 			);
@@ -571,6 +576,7 @@
 				D91054C61F3735E50007F224 /* YYTextLayout.m in Sources */,
 				D91054FA1F3736700007F224 /* UIControl+YYAdd.m in Sources */,
 				D91054DD1F3736060007F224 /* AppDelegate.m in Sources */,
+				F244B82A2B81F32A00298041 /* YYTextDarkModeExample.m in Sources */,
 				D91054D81F3735E50007F224 /* YYTextView.m in Sources */,
 				D91054F91F3736700007F224 /* NSString+YYAdd.m in Sources */,
 				D910548A1F3735D20007F224 /* YYImageCoder.m in Sources */,
