@@ -111,7 +111,19 @@ static dispatch_queue_t YYTextAsyncLayerGetReleaseQueue() {
 
 - (void)display {
     super.contents = super.contents;
-    [self _displayAsync:_displaysAsynchronously];
+    if ([self.delegate isKindOfClass:UIView.class]) {
+        UIView *view = (UIView *)self.delegate;
+        __weak typeof(self) _self = self;
+        if (@available(iOS 13.0, *)) {
+            [view.traitCollection performAsCurrentTraitCollection:^{
+                [_self _displayAsync:_displaysAsynchronously];
+            }];
+        } else {
+            [self _displayAsync:_displaysAsynchronously];
+        }
+    } else {
+        [self _displayAsync:_displaysAsynchronously];
+    }
 }
 
 #pragma mark - Private

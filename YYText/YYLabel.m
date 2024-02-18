@@ -1205,6 +1205,17 @@ static dispatch_queue_t YYLabelGetReleaseQueue() {
     return task;
 }
 
+- (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
+    [super traitCollectionDidChange:previousTraitCollection];
+    if (@available(iOS 13.0, *)) {
+        if ([self.traitCollection hasDifferentColorAppearanceComparedToTraitCollection:previousTraitCollection]) {
+            [self _setLayoutNeedUpdate];
+        }
+    } else {
+        
+    }
+}
+
 @end
 
 
